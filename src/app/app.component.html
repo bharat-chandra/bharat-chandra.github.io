@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card text-center">
+        <div class="card-header bg-light">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-item active" [routerLink]="['']">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a [routerLink]="['/skills']">Skills</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a [routerLink]="['/portfolio']">Portfolio</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a [routerLink]="['/contact']">Contact</a>
+            </li>
+          </ul>
+        </div> 
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
